@@ -48,10 +48,12 @@ const App = () => {
     useEffect(() => {
         function handleKeyPress(e) {
             if(!gameStart) return; 
-            if(e.key === 'ArrowRight')
+            if(e.key === 'ArrowRight'){
                 setBallPosition(ballPosition+5);
-            else if(e.key === 'ArrowLeft')
-                setBallPosition(ballPosition - 5);            
+            }
+            else if(e.key === 'ArrowLeft'){
+                setBallPosition(ballPosition - 5);
+            }
         }
 
         document.addEventListener('keydown', handleKeyPress);
