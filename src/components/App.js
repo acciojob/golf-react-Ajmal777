@@ -42,7 +42,7 @@ import '../styles/App.css';
 // }
 
 const App = () => {
-    const [ballPosition, setBallPosition] = useState(0);
+    const [ballPosition, setBallPosition] = useState(5);
     const [gameStart, setGameStart] = useState(false);
 
     useEffect(() => {
